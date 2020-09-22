@@ -1,3 +1,7 @@
-export const updateValue = (state, payLoad) => {
-    state.value = payLoad;
-}
+import * as types from './types';
+
+export default {
+    [types.MUTATE_UPDATE_VALUE]: (state, payload) => {
+        state.value = payload;
+    }
+};
